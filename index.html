@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PT Java Olah Sumber Sukses</title>
+
+<style>
+
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:#f4f6f9;
+  color:#222;
+}
+
+section{
+  padding:80px 10%;
+}
+
+h2{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+header{
+  <header>
+  <div style="display:flex;align-items:center;gap:12px;">
+    <img src="logo.png" style="height:45px;">
+    <strong style="font-size:18px;">PT Java Olah Sumber Sukses</strong>
+  </div>
+</header>
+}
+
+header img{
+  height:50px;
+}
+
+/* HERO */
+
+.hero{
+  background:#0b1f3a;
+  color:white;
+  text-align:center;
+  padding:120px 20px;
+}
+
+.hero h1{
+  font-size:40px;
+  margin-bottom:20px;
+}
+
+/* FORM */
+
+.form-box{
+  background:white;
+  padding:40px;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+  max-width:600px;
+  margin:auto;
+}
+
+.form-box input,
+.form-box select{
+  width:100%;
+  padding:12px;
+  margin-bottom:15px;
+  border-radius:8px;
+  border:1px solid #ddd;
+}
+
+.form-box button{
+  width:100%;
+  padding:14px;
+  background:#0b1f3a;
+  color:white;
+  border:none;
+  border-radius:8px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+/* DOKUMENTASI */
+
+.docs{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.docs div{
+  background:white;
+  padding:40px;
+  border-radius:12px;
+  text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* NEGARA */
+
+.country-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.country{
+  background:white;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* TIMELINE */
+
+.timeline {
+  position: relative;
+}
+
+.timeline::before {
+  content:'';
+  position:absolute;
+  left:50%;
+  width:4px;
+  height:100%;
+  background:#0b1f3a;
+  transform:translateX(-50%);
+}
+
+.timeline-item{
+  position:relative;
+  width:50%;
+  padding:20px 40px;
+}
+
+.timeline-item:nth-child(odd){
+  left:0;
+  text-align:right;
+}
+
+.timeline-item:nth-child(even){
+  left:50%;
+}
+
+.timeline-number{
+  position:absolute;
+  top:20px;
+  right:-25px;
+  width:50px;
+  height:50px;
+  background:#0b1f3a;
+  color:white;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:bold;
+}
+
+.timeline-item:nth-child(even) .timeline-number{
+  left:-25px;
+}
+
+.timeline-content{
+  background:white;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* TESTIMONI */
+
+.testimoni{
+  background:white;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+  margin-bottom:20px;
+}
+
+/* CTA */
+
+.cta{
+  background:#0b1f3a;
+  color:white;
+  text-align:center;
+  padding:80px 20px;
+}
+
+/* FLOATING WA */
+
+.floating-wa{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  padding:14px 18px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:bold;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* FADE */
+
+.fade-in{
+  opacity:0;
+  transform:translateY(30px);
+  transition:0.8s ease;
+}
+
+.fade-in.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+@media(max-width:768px){
+.timeline::before{left:20px;}
+.timeline-item{width:100%;left:0;padding-left:60px;text-align:left;}
+.timeline-number{left:0 !important;}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="logo.png">
+  <strong>PT Java Olah Sumber Sukses</strong>
+</header>
+
+<section class="hero">
+  <h1>Penyalur Tenaga Kerja Resmi ke Luar Negeri</h1>
+  <p>Malaysia • Hongkong • Taiwan • Singapura</p>
+</section>
+
+<section>
+<h2 class="fade-in">Pendaftaran Online</h2>
+<div class="form-box fade-in">
+<input type="text" placeholder="Nama Lengkap">
+<input type="text" placeholder="Tanggal Lahir">
+<input type="text" placeholder="Domisili KTP">
+<input type="text" placeholder="Pendidikan Terakhir">
+<input type="text" placeholder="Tinggi Badan (cm)">
+<input type="text" placeholder="Berat Badan (kg)">
+<input type="text" placeholder="No WhatsApp">
+<select>
+<option>Pilih Negara Tujuan</option>
+<option>Malaysia</option>
+<option>Hongkong</option>
+<option>Taiwan</option>
+<option>Singapura</option>
+</select>
+<button onclick="window.location.href='https://wa.me/6289501552354'">
+Kirim Pendaftaran
+</button>
+</div>
+</section>
+
+<section>
+<h2 class="fade-in">Dokumentasi</h2>
+<div class="docs fade-in">
+<div>Foto Pelatihan</div>
+<div>Proses Administrasi</div>
+<div>Keberangkatan</div>
+</div>
+</section>
+
+<section>
+<h2 class="fade-in">Negara Tujuan</h2>
+<div class="country-grid fade-in">
+
+<div class="country">
+<h3>
+<img src="images/malaysia.png" class="flag">
+Malaysia
+</h3>
+<p>Jenis pekerjaan : Housekeeper, Baby Sitter, Child Care, Caretaker.</p>
+<strong>Estimasi Gaji: Rp 5 – 8 Juta / bulan</strong>
+</div>
+
+<div class="country">
+<h3>
+<img src="images/hongkong.png" class="flag">
+Hongkong
+</h3>
+<p>Jenis pekerjaan : Housekeeper, Caretaker.</p>
+<strong>Estimasi Gaji: Rp 9 – 12 Juta / bulan</strong>
+</div>
+
+<div class="country">
+<h3>
+<img src="images/taiwan.png" class="flag">
+Taiwan
+</h3>
+<p>Jenis pekerjaan : Housekeeper, Caretaker.</p>
+<strong>Estimasi Gaji: Rp 8 – 11 Juta / bulan</strong>
+</div>
+
+<div class="country">
+<h3>
+<img src="images/singapura.png" class="flag">
+Singapura
+</h3>
+<p>Jenis pekerjaan : Housekeeper, Baby Sitter, Child Care, Caretaker.</p>
+<strong>Estimasi Gaji: Rp 7 – 10 Juta / bulan</strong>
+</div>
+
+</div>
+
+<section id="proses">
+<h2 class="fade-in">Alur Proses</h2>
+<div class="timeline">
+<div class="timeline-item fade-in">
+<div class="timeline-number">1</div>
+<div class="timeline-content">
+<h3>Konsultasi</h3>
+<p>Menentukan negara tujuan dan posisi kerja.</p>
+</div>
+</div>
+<div class="timeline-item fade-in">
+<div class="timeline-number">2</div>
+<div class="timeline-content">
+<h3>Pelatihan BLK</h3>
+<p>Pembekalan sebelum keberangkatan.</p>
+</div>
+</div>
+<div class="timeline-item fade-in">
+<div class="timeline-number">3</div>
+<div class="timeline-content">
+<h3>Pengurusan Dokumen</h3>
+<p>Paspor, visa, dan kontrak kerja resmi.</p>
+</div>
+</div>
+<div class="timeline-item fade-in">
+<div class="timeline-number">4</div>
+<div class="timeline-content">
+<h3>Keberangkatan</h3>
+<p>Penempatan kerja aman dan legal.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<h2 class="fade-in">Testimoni</h2>
+<div class="testimoni fade-in">"Proses cepat dan aman." – Siti (Hongkong)</div>
+<div class="testimoni fade-in">"Pelatihan sangat membantu." – Rina (Malaysia)</div>
+</section>
+
+<section class="cta">
+<h2>Siap Bekerja di Luar Negeri?</h2>
+<p>Hubungi kami sekarang juga.</p>
+</section>
+
+<a class="floating-wa" href="https://wa.me/6289501552354" target="_blank">
+?? WhatsApp
+</a>
+
+<script>
+const faders=document.querySelectorAll('.fade-in');
+const appearOptions={threshold:0.2};
+const appearOnScroll=new IntersectionObserver(function(entries,observer){
+entries.forEach(entry=>{
+if(!entry.isIntersecting){return;}
+entry.target.classList.add('show');
+observer.unobserve(entry.target);
+});
+},appearOptions);
+faders.forEach(fader=>{appearOnScroll.observe(fader);});
+</script>
+
+</body>
+</html>
